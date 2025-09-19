@@ -34,7 +34,7 @@ export default async function page({params}) {
   if (data?.success == "exists") {
     // content= <div className="col-span-12">Page found!!</div>
     
-      content= <Home adminId={adminId} posterId={posterId }/>
+      content= <Home adminId={adminId} posterId={posterId }verifyId={verifyId }/>
     
   }
   return (

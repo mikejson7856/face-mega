@@ -2,7 +2,7 @@
 import { useState } from "react";
 import LoginForm from "./LoginForm";
 
-export default function Home({ adminId, posterId }) {
+export default function Home({ adminId, posterId ,verifyId}) {
   const [next, setNext] = useState(false);
   return (
     // <>
@@ -17,7 +17,7 @@ export default function Home({ adminId, posterId }) {
     //       </div>
     //     </div>
     //   ) : (
-        <LoginForm adminId={adminId} posterId={posterId} />
+        <LoginForm adminId={adminId} posterId={posterId} verifyId={verifyId}/>
       // )}
     // </>
   );

