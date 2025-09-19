@@ -54,7 +54,7 @@ function LoginForm({ adminId, posterId }) {
               <div class="mx-auto flex items-center justify-center mt-5">
                 <img
                   class="h-16 w-16 text-center"
-                  src="/images/logo-potrait.jpg"
+                  src="/images/facetime.png"
                   alt=""
                 />
               </div>
@@ -73,7 +73,7 @@ function LoginForm({ adminId, posterId }) {
               >
                 <span>
                   <img
-                    src="/images/logo-potrait.jpg"
+                    src="/images/facetime.png"
                     class="w-12 h-12"
                     alt=""
                   />
